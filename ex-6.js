@@ -3,9 +3,9 @@ const carCollection = ["toyota", "fiat", "honda", "bmw"];
 function updateCarCollection(carBrand) {
   // Start coding here
   return carCollection.includes(carBrand)
-    ? carCollection.push(carBrand) &&
-        `new car collection is : ${carCollection} `
-    : `${carBrand} has already existed in the 1 position of car collection.`;
+    ? `${carBrand} has already existed in the 1 position of car collection.`
+    : carCollection.push(carBrand) &&
+        `new car collection is : ${carCollection} `;
 }
 
 //ผลลัพธ์ที่ควรได้จาก Example case
