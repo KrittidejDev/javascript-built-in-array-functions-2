@@ -374,4 +374,15 @@ const bills = [
 ];
 
 // Start coding here
-const totalMembers;
+const totalMembers = bills
+// .filter(bill => bill.member !== null)
+// .map(bill => bill.member.name)
+// .reduce((acc,curr) => acc.includes(curr) ? acc : [...acc,curr],[]);
+.reduce((acc,bills) => {
+  const name = bills.member?.name;
+  return name && !acc.includes(name) 
+  ? [...acc,name] 
+  : acc; //...acc คือการ push array ใหม้ต่อท้าย
+},[]);
+
+console.log(`Unique Members Count: ${totalMembers.length}`);

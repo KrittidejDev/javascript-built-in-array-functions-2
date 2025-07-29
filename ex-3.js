@@ -374,4 +374,8 @@ const bills = [
 ];
 
 // Start coding here
-const billMembers;
+const billMembers = bills
+.filter(members => members.member !== null)
+.map(countMember => countMember.member.name);
+
+console.log(billMembers);

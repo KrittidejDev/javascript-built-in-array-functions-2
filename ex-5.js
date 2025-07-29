@@ -2,6 +2,10 @@ let crimeRecordNames = ["Theodora Milenko", "Tinashe Benigno", "Mahalia Priyanka
 
 function searchCrimeRecord(name) {
   // Start coding here
+  const isCreime = crimeRecordNames.includes(name); //Declare ตัว Variable เพื่อรับค่า true/false
+  return isCreime === true 
+  ? `${name} has crime record !!!` 
+  : `${name} has no crime record`;
 }
 
 //ผลลัพธ์ที่ควรได้จาก Example case
