@@ -381,8 +381,8 @@ const totalMembers = bills
 .reduce((acc,bills) => {
   const name = bills.member?.name;
   return name && !acc.includes(name) 
-  ? [...acc,name] 
-  : acc; //...acc คือการ push array ใหม้ต่อท้าย
+  ? [...acc,name] //...acc คือการ push array ใหม่ต่อท้าย
+  : acc; 
 },[]);
 
 console.log(`Unique Members Count: ${totalMembers.length}`);
