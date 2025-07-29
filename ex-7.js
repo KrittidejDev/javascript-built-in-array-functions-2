@@ -1,5 +1,10 @@
 function isPalindrome(string) {
   // Start coding here
+  if (string === string.split("").reverse().join("")) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 //Example case
