@@ -374,5 +374,7 @@ const bills = [
 ];
 
 // Start coding here
+const newBillsArr = (bills) => bills.filter((item) => item.member);
 
-const newBills;
+const newBills = newBillsArr(bills);
+console.log(newBills);
